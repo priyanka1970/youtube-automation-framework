@@ -1,0 +1,93 @@
+# Credentials and local browser sessions
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+production/chrome-profile/
+production/assets/channel-logo.*
+production/assets/*.png
+.railway/
+
+# Generated projects and media
+scripting/projects/
+production/outputs/
+outputs/
+*.mp4
+*.wav
+*.mp3
+*.m4a
+
+# Dependencies and caches
+node_modules/
+production/node_modules/
+**/__pycache__/
+*.py[cod]
+.venv/
+npm-debug.log*
+
+.chrome-profile/
+.claude/
+# LOCAL FRAMEWORK SAFETY RULES
+
+# Environment files and secrets
+.env
+.env.*
+!/.env.example
+!**/.env.example
+**/secrets/
+**/*credentials*.json
+**/*service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Google Chrome profiles and login sessions
+production/.chrome-profile*/
+
+# Generated videos, narration, screenshots and diagnostic outputs
+production/outputs/
+*.mp4
+*.wav
+*.mp3
+*.m4a
+*.webm
+
+# Dependencies, temporary files and local backups
+node_modules/
+**/node_modules/
+*.log
+*.tmp
+**/*.backup-*
+**/*.bak
+Thumbs.db
+.DS_Store
+
+# Exclude local backups and temporary diagnostic probes
+**/*.backup*
+**/*.bak*
+**/*_old.py
+**/tmp_*probe*.py
+
+# SAFE FRAMEWORK PUBLISHING RULES
+.env
+.env.*
+!/.env.example
+!**/.env.example
+production/.chrome-profile*/
+production/outputs/
+**/node_modules/
+**/*.backup*
+**/*.bak*
+**/*_old.py
+**/tmp_*probe*.py
+*.mp4
+*.wav
+*.mp3
+*.m4a
+*.webm
+*.pem
+*.key
+*.p12
+*.pfx
